@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pioneer Bank</title>
+
+    <!-----Bootstrap CSS Start----->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!------Bootstrap CSS End----->
+    <!-----Style CSS Start----->
+    <link rel="stylesheet" href="style.css">
+    <!-----Style CSS End----->
+</head>
+<body>
+    <div id="login-area" class="mt-5 mb-5">
+        <div class="container">
+            <h1 class="text-center">Welcome to Pioneer Bank.</h1>
+        <div class="submit-area">
+            <form>
+                <h4>Login</h4>
+                <div class="form-group">
+                  <input type="email" class="form-control" placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                  <input type="password" class="form-control" placeholder="Password">
+                </div>
+                <!-----Button----->
+              </form>
+              <div>
+                <button id="login" type="submit" class="btn btn-success">Login</button>
+              </div>
+        </div>
+        </div>
+    </div>
+    <div id="transciton-area" class="mt-5 mb-5">
+      <div class="container">
+        <h1 class="text-center text-success mb-5">You are login successfully.</h1>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="deposit status">
+              <h5>Deposit</h5>
+              <h2>$ <span id="currentDeposit">00</span></h2>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="withdraw status">
+              <h5>Withdraw</h5>
+              <h2>$ <span id="currentWithdraw">00</span></h2>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="balance status">
+              <h5>Balance</h5>
+              <h2>$ <span id="currentBalance">5000</span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="submit-area">
+              <form>
+                <h4>Deposit</h4>
+                <div class="form-group">
+                  <input id="depositAmount" type="text" class="form-control" placeholder="$ amount you want to deposit">
+                </div>
+                <!-----Button----->
+              </form>
+              <div>
+                <button id="addDeposit" type="submit" class="btn btn-success">Deposit</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="submit-area">
+              <form>
+                <h4>Withdraw</h4>
+                <div class="form-group">
+                  <input id="withdrawAmount" type="text" class="form-control" placeholder="$ amount you want to withdraw">
+                </div>
+                <!-----Button----->
+              </form>
+              <div>
+                <button id="addWithdraw" type="submit" class="btn btn-success">Withdraw</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="style.js"></script>
+</body>
+</html>

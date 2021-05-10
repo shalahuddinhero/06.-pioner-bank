@@ -1,0 +1,30 @@
+body {
+    
+}
+.submit-area {
+    margin-top: 50px;
+    padding: 50px;
+    box-shadow: 5px 5px 10px gray;
+}
+.submit-area input:hover {
+    cursor: pointer;
+}
+#transciton-area {
+    display: none;
+}
+.status {
+    margin: 0 20px;
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+.deposit {
+    background-color: slateblue;
+}
+.withdraw {
+    background-color: lightsalmon;
+}
+.balance {
+    background-color: orange;
+}
